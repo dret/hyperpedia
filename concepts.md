@@ -23,3 +23,5 @@ Internationalization (I18N) issues
 ## Traversal Hints
 
 for example, which [HTTP](http://tools.ietf.org/html/rfc7231) method to use
+
+a [URI Template](http://tools.ietf.org/html/rfc6570), possibly with a description of the variables
