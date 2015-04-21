@@ -25,3 +25,8 @@ Internationalization (I18N) issues
 for example, which [HTTP](http://tools.ietf.org/html/rfc7231) method to use
 
 a [URI Template](http://tools.ietf.org/html/rfc6570), possibly with a description of the variables
+
+## Topology
+
+Binary or more than two participating resources
+
