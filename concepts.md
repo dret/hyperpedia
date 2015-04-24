@@ -20,7 +20,7 @@ is affected by _directionality_
 
 ## Human-Readable Label(s)
 
-includes Internationalization (I18N) issues
+includes Internationalization (I18N) issues ([Language Tags and Locale Identifiers for the World Wide Web](http://www.w3.org/TR/ltli/))
 
 ## Traversal Hints
 
