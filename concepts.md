@@ -12,7 +12,7 @@ is affected by _directionality_
 
 ## Resource Role
 
-[W3C's XML Linking Language (XLink)](http://www.w3.org/TR/xlink11/)
+[W3C's XML Linking Language (XLink)](formats/XLink.md)
 
 ## Target Resource Type
 
