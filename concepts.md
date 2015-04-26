@@ -24,11 +24,16 @@ _Incoming links_ generally follow two analogous patterns:
 * If the link target is a subresource, then the URI will have a fragment identifier. Depending on the resource representation, this may or may not require the resource to provide a specific anchoring mechanism. In [HTML](formats/HTML.md), for example, fragments refer to names and thus these names must be specified in the target resource in order for the subresource to be name-addressable. In [plain text](https://tools.ietf.org/html/rfc2046#section-4.1), on the other hand, [fragment identifiers](https://tools.ietf.org/html/rfc5147) use line and character addressing, and thus subresources can be identified without the need for explicit anchors in the target resource.
 
 
-## Link Relation
+## Link Relation Type
 
-[Web Linking (RFC 5988)](http://tools.ietf.org/html/rfc5988)
+Hypermedia links serve a certain purpose, i.e. a client choose to follow links based on client goals, and whether following certain links is necessary to achieve those goals. The goal is something that is based on the context of the link, and on the particular client. _Link relations_ are one way of typing links, allowing them to be annotated with information about _why_ a client might want to follow a given link. Link relations should not be used express an expectation _what_ resource to expect as the link's target, instead they should only represent information about _why_ a client might want to follow a link.
 
-is affected by _directionality_
+[Web Linking (RFC 5988)](http://tools.ietf.org/html/rfc5988) is one standard on the Web that defines a simple framework for link relation identification, and also defines a way how links can be represented in an HTTP "Link" header field. Using this specification allows hypermedia links to be open and extensible in terms of which types of link relations can be represented.
+
+[HTML](formats/HTML.md) and similar markup-based languages sometimes use element or attribute names to represent link relation types. While this has the advantage of being easily readable markup, the disadvantage is that the link relation types become hardcoded into the language's schema, which means that the set of supported link relation types is predefined and not extensible without changing the language itself.
+
+Link relation information is affected by _directionality_. If a link format has notions of representing "forward" and "backward" links, then the link relation type much be annotated in a way that identifies the direction it applies to, because most link relation types do not represent symmetric relationships between resources.
+
 
 ## Resource Role
 
