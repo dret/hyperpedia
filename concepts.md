@@ -1,5 +1,10 @@
 # Hypermedia Concepts
 
+This is a necessarily fuzzy and incomplete collection of information that can be associated with link in hypermedia scenarios.
+
+This is _not_ an attempt to define the complete and strictly typed &uuml;bermodel for hypermedia.
+
+
 ## Target Identification
 
 [Uniform Resource Identifier (URI)](http://tools.ietf.org/html/rfc3986)
