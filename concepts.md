@@ -1,4 +1,4 @@
-# Hypermedia Concepts
+# Hyperpedia Concepts
 
 This is a necessarily fuzzy and incomplete collection of information that can be associated with link in hypermedia scenarios.
 
