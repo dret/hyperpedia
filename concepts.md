@@ -39,13 +39,16 @@ Link relation information is affected by _directionality_. If a link format has 
 
 [W3C's XML Linking Language (XLink)](formats/XLink.md)
 
+
 ## Target Resource Type
 
 [Internet Media Type](https://tools.ietf.org/html/rfc6838)
 
+
 ## Human-Readable Label(s)
 
 includes Internationalization (I18N) issues ([Language Tags and Locale Identifiers for the World Wide Web](http://www.w3.org/TR/ltli/))
+
 
 ## Traversal Hints
 
@@ -55,9 +58,11 @@ a [URI Template](http://tools.ietf.org/html/rfc6570), possibly with a descriptio
 
 is affected by _directionality_
 
+
 ## Topology
 
 Binary or more than two participating resources
+
 
 ## Directionality
 
