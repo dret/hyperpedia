@@ -35,11 +35,6 @@ Hypermedia links serve a certain purpose, i.e. a client choose to follow links b
 Link relation information is affected by _directionality_. If a link format has notions of representing "forward" and "backward" links, then the link relation type much be annotated in a way that identifies the direction it applies to, because most link relation types do not represent symmetric relationships between resources.
 
 
-## Resource Role
-
-[W3C's XML Linking Language (XLink)](formats/XLink.md)
-
-
 ## Target Resource Type
 
 [Internet Media Type](https://tools.ietf.org/html/rfc6838)
@@ -62,6 +57,11 @@ is affected by _directionality_
 ## Topology
 
 Binary or more than two participating resources
+
+
+## Resource Role
+
+[W3C's XML Linking Language (XLink)](formats/XLink.md)
 
 
 ## Directionality
