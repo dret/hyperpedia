@@ -38,6 +38,7 @@ Link relation information is affected by _directionality_. If a link format has 
 ## Target Resource Hints
 
 [Internet Media Type](https://tools.ietf.org/html/rfc6838)
+[HTTP Content Negotiation](https://tools.ietf.org/html/rfc7231#section-5.3)
 
 
 ## Human-Readable Label(s)
@@ -47,16 +48,22 @@ includes Internationalization (I18N) issues ([Language Tags and Locale Identifie
 
 ## Traversal Hints
 
-for example, which [HTTP](http://tools.ietf.org/html/rfc7231) method to use
+A link communicates to a client one possible hypermedia navigation, and the client might choose to follow a link based on client goals. However, depending on the type of navigation, it may be necessary to know additional rules that need to be followed when traversing the link. However, these rules will be specific to specific interaction with the target resource, which is not determined by the link itself, but instead by the [URI scheme](https://tools.ietf.org/html/rfc3986#section-3.1) of the target resource identifier, and possibly by the target resource itself.
 
-a [URI Template](http://tools.ietf.org/html/rfc6570), possibly with a description of the variables
+The idea of _traversal hints_ is to give clients hints about _how_ to traverse a link. This may include information such as which [HTTP method](https://tools.ietf.org/html/rfc7231#section-4) to use, but may also include more specific information about how to interact with the target resource, such as a [URI Template](http://tools.ietf.org/html/rfc6570), possibly with a description of the variables.
 
-is affected by _directionality_
+Generally speaking, there are two major approaches to how traversal hints can be represented:
+
+* Traversal hints can be _implicit_ in a link's type, so that the link itself already represents a hint as to how to traverse it. For example, [HTML forms](http://www.w3.org/TR/html401/interact/forms.html#submit-format) define two possible ways how to communicate the contents of a form, and while the choice between those two is made explicit (using the [_method_](http://www.w3.org/TR/html401/interact/forms.html#adef-method) attribute), the rules themselves are hardcoded in the HTML specification.
+
+* Traversal hints can be _explicit_ in the link's representation, so that clients have to interpret and use them at runtime. For example, a [URI Template](http://tools.ietf.org/html/rfc6570) is one way how a link can specify how to compose the [query component](https://tools.ietf.org/html/rfc3986#section-3.4) of a URI when traversing a link.
+
+Since traversal hints tell a client how to behave when following a link, they are affected by the _directionality_ and the _topology_ of a link, should those be concepts that are variable in a specific link model.
 
 
 ## Topology
 
-While links usually are thought of to have two participating resources or subresources (the _source_ and the _target_), link models can also support other topologies. It is both possible to have _unary_ "links" (which also can be thought of as annotations, since "traversing" them is not a meaningful concept), or n-ary links, where the link model supports more than two participating resources.
+While links usually are thought of to have two participating resources or subresources (the _source_ and the _target_), link models can also support other topologies. It is both possible to have _unary_ "links" (which also can be thought of as annotations, since "traversing" them is not a meaningful concept), or _n-ary_ links, where the link model supports more than two participating resources.
 
 Some generalized link models such as [W3C's XML Linking Language (XLink)](formats/XLink.md) support n-ary links. While the exact design of those links depends on the language, it is important to note that for these kinds of links, typically more link metadata is required to make the link actionable. In typical n-ary link models, both the set of participating resources as well as the connecting _arcs_ (to choose the XLink term for this concept) between them need to be made explicit, so that clients know how to navigate such a structurally complex link.
 
