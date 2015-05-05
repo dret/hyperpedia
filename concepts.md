@@ -35,6 +35,11 @@ Hypermedia links serve a certain purpose, i.e. a client choose to follow links b
 Link relation information is affected by _directionality_. If a link format has notions of representing "forward" and "backward" links, then the link relation type much be annotated in a way that identifies the direction it applies to, because most link relation types do not represent symmetric relationships between resources.
 
 
+## Human-Readable Label(s)
+
+includes Internationalization (I18N) issues ([Language Tags and Locale Identifiers for the World Wide Web](http://www.w3.org/TR/ltli/))
+
+
 ## Target Resource Hints
 
 A link itself should represent all the information that a client needs to decide whether it should or should not traverse the link, based on client goals. But that does not imply _what_ to expect as the target resource, it _only_ implies _why_ a client might decide to engage in a resource interaction. This is important because a link should not hardcode assumptions about what to expect when traversing the link, because this may change over time.
@@ -42,11 +47,6 @@ A link itself should represent all the information that a client needs to decide
 However, in some scenarios link authors may choose to represent information about the target resource. However, since these are mere assumptions made at _link authoring time_ (which can be very different from _link traversal time_), this information can merely serve as a _hint_ and may or may not turn out to be correct at link traversal time. Therefore, hints always should be optional and should be treated as information that may or may not be true when the link is traversed. Clients should always give preference to any resource information that results from link traversal, rather than assuming that the resource hint was correct.
 
 Typical target resource hints include a resource's [Internet Media Type](https://tools.ietf.org/html/rfc6838), and more generally speaking, a typical set is the set of resource properties that can be used in [HTTP Content Negotiation](https://tools.ietf.org/html/rfc7231#section-5.3). These properties are the media type, the character set, the encoding, and the language.
-
-
-## Human-Readable Label(s)
-
-includes Internationalization (I18N) issues ([Language Tags and Locale Identifiers for the World Wide Web](http://www.w3.org/TR/ltli/))
 
 
 ## Traversal Hints
