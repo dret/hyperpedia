@@ -37,7 +37,9 @@ Link relation information is affected by _directionality_. If a link format has 
 
 ## Human-Readable Label(s)
 
-includes Internationalization (I18N) issues ([Language Tags and Locale Identifiers for the World Wide Web](http://www.w3.org/TR/ltli/))
+If a link is used in human-facing applications, then it often can be helpful to include human-readable labels. Using these labels may include *Internationalization (I18N)* issues (such as covered in [Language Tags and Locale Identifiers for the World Wide Web](http://www.w3.org/TR/ltli/)), so that the labels can be used for more than just one language.
+
+Labels may be used for various aspects of a link, depending on the complexity of the link model, and the UI design. For example, labels can be used to annotate link relation types as well as target resource hints. In more complex link models, target resource roles may also be annotated with human-readable labels.
 
 
 ## Target Resource Hints
