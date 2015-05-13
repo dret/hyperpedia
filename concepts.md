@@ -75,7 +75,11 @@ Some generalized link models such as [W3C's XML Linking Language (XLink)](format
 
 ## Resource Role
 
-[W3C's XML Linking Language (XLink)](formats/XLink.md)
+In simple link structures, the roles of resources are implicit in the definition and the direction of the link. Thus, as long as the topology is limited to binary links, resource roles do not need to be specified explicitly, and can be inferred from the link relation type and the participating resources.
+
+However, in more general topologies (specifically, n-ary models beyond the binary one), resources can participate in a link in a variety of roles, and simply listing them as participating resources is not sufficient anymore. One example is the [XML Linking Language (XLink)](formats/XLink.md), which allows any number or participating resources in links, and thus has an explicit mechanism to indicate the role that a participating resource is playing in a link.
+
+As a special case, the _to_ and _from_ indicators of directed binary links can be regarded as indicators of resource roles. Even though they do not explicitly represent a participating resource's role, the combination of the directed binary link relation type and the participating resource's role as source or target resource are sufficient to understand the resource's role.
 
 
 ## Directionality
