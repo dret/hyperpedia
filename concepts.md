@@ -73,6 +73,13 @@ While links usually are thought of to have two participating resources or subres
 Some generalized link models such as [W3C's XML Linking Language (XLink)](formats/XLink.md) support n-ary links. While the exact design of those links depends on the language, it is important to note that for these kinds of links, typically more link metadata is required to make the link actionable. In typical n-ary link models, both the set of participating resources as well as the connecting _arcs_ (to choose the XLink term for this concept) between them need to be made explicit, so that clients know how to navigate such a structurally complex link.
 
 
+## Directionality
+
+Directionality is the question of how a link is directed when it is not symmetric. Looked at it this way, the concept only meaningfully applies to binary links, as directionality is hard to define for n-ary link topologies beyond a binary model. For n-ary link topologies, instead of directionality it makes more sense to discuss resource roles, which is a more expressive way of determining a link's participating resources' roles than the simple model of directionality.
+
+The difference between directionality and resource roles is that directionality usually uses a general model of a link's direction, and then uses _from_ (or _source_) and _to_ (or _target_) indicators. Combined with the way how a specific link (as identified by a link relation type) defines these roles, the directionality then determines the participating resources' roles in a particular link.
+
+
 ## Resource Role
 
 In simple link structures, the roles of resources are implicit in the definition and the direction of the link. Thus, as long as the topology is limited to binary links, resource roles do not need to be specified explicitly, and can be inferred from the link relation type and the participating resources.
@@ -80,12 +87,5 @@ In simple link structures, the roles of resources are implicit in the definition
 However, in more general topologies (specifically, n-ary models beyond the binary one), resources can participate in a link in a variety of roles, and simply listing them as participating resources is not sufficient anymore. One example is the [XML Linking Language (XLink)](formats/XLink.md), which allows any number or participating resources in links, and thus has an explicit mechanism to indicate the role that a participating resource is playing in a link.
 
 As a special case, the _to_ and _from_ indicators of directed binary links can be regarded as indicators of resource roles. Even though they do not explicitly represent a participating resource's role, the combination of the directed binary link relation type and the participating resource's role as source or target resource are sufficient to understand the resource's role.
-
-
-## Directionality
-
-Directionality is the question of how a link is directed when it is not symmetric. Looked at it this way, the concept only meaningfully applies to binary links, as directionality is hard to define for n-ary link topologies beyond a binary model. For n-ary link topologies, instead of directionality it makes more sense to discuss resource roles, which is a more expressive way of determining a link's participating resources' roles than the simple model of directionality.
-
-The difference between directionality and resource roles is that directionality usually uses a general model of a link's direction, and then uses _from_ (or _source_) and _to_ (or _target_) indicators. Combined with the way how a specific link (as identified by a link relation type) defines these roles, the directionality then determines the participating resources' roles in a particular link.
 
 
