@@ -84,5 +84,8 @@ As a special case, the _to_ and _from_ indicators of directed binary links can b
 
 ## Directionality
 
-How is the link directed 
+Directionality is the question of how a link is directed when it is not symmetric. Looked at it this way, the concept only meaningfully applies to binary links, as directionality is hard to define for n-ary link topologies beyond a binary model. For n-ary link topologies, instead of directionality it makes more sense to discuss resource roles, which is a more expressive way of determining a link's participating resources' roles than the simple model of directionality.
+
+The difference between directionality and resource roles is that directionality usually uses a general model of a link's direction, and then uses _from_ (or _source_) and _to_ (or _target_) indicators. Combined with the way how a specific link (as identified by a link relation type) defines these roles, the directionality then determines the participating resources' roles in a particular link.
+
 
