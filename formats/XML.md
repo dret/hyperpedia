@@ -4,6 +4,7 @@ The _Extensible Markup Language (XML)_ is a profile of [SGML](http://en.wikipedi
 
 XML currently exists in two versions ([XML 1.0](http://www.w3.org/TR/xml/) and [XML 1.1](http://www.w3.org/TR/xml11/)), but these versions [only differ in ways that do not matter for their hypermedia features](http://www.w3.org/TR/xml11/#sec-xml11), and thus they are both covered in the same format description.
 
+
 ## External Entities
 
 The concept of [external entities](http://www.w3.org/TR/xml/#sec-external-ent) in XML is used in three different places where XML documents can refer to URI-identified resources:
@@ -16,3 +17,9 @@ The concept of [external entities](http://www.w3.org/TR/xml/#sec-external-ent) i
 
 All of these places have deep roots in the SGML history of XML, and many XML-based formats do not use any of them, but instead alternative methods to achieve similar goals.
 
+
+## Namespace URIs
+
+Even though [XML Namespaces](http://www.w3.org/TR/xml-names/) are neither part of XML, nor intended to be used as links, they are used in many XML vocabularies and use URIs, and thus may be worth mentioning briefly.
+
+XML Namespace URIs are _only_ intended as identifiers and thus the only meaningful operation used on them is [comparing them](http://www.w3.org/TR/xml-names/#NSNameComparison). Any other operation, including using the URI as a link and dereferencing it, is outside of the scope of XML Namespaces as they are intended.
