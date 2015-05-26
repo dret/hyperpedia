@@ -4,3 +4,5 @@
 
 
 ## xi:include Element
+
+XInclude's [xi:include Element](http://www.w3.org/TR/xinclude/#include_element) is used for representing the information about the included resource, and how it should be included.
