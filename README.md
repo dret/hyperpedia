@@ -11,7 +11,7 @@ As a starting point, the intention is to describe concepts, and formats. To keep
 
 * [A list of hypermedia concepts](concepts.md) is managed in a single file unless it gets too big to make that look like a reasonable option.
 
-* [A list of hypermedia formats](formats) is managed in a directory and should contain individual files for each hypermedia format, relating the hypermedia features of the format to the concepts.
+* [A list of hypermedia formats](formats.md) is managed in a directory and should contain individual files for each hypermedia format, relating the hypermedia features of the format to the concepts.
 
 
 ## Contributing
