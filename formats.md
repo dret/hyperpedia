@@ -11,6 +11,7 @@ While the following categorization is not perfect or always clear, it serves as 
 
 * [Collection+JSON](formats/Collection+JSON.md)
 * [Extensible Markup Language (XML)](formats/XML.md)
+* [Hydra](formats/Hydra.md)
 * [Hypertext Application Language (HAL)](formats/HAL.md)
 * [Uniform Basis for Exchanging Representations (UBER)](formats/UBER.md)
 * [XML Inclusions (XInclude)](formats/XInclude.md)
