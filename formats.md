@@ -4,7 +4,7 @@ This collection of hypermedia formats describes them in terms of the [Hyperpedia
 
 Please keep in mind that in no way any of the format descriptions presented here is intended to be exhaustive or complete. The descriptions given here _only_ focus on the hypermedia capabilities of the formats, and ignore everything else.
 
-While the following categorization is not perfect or always clear, it serves as an attempt to distinguish between formats that are supposed to be used directly for applications, and those that are intended to be used as components or foundations to build formats with that then are used for applications.
+While the following categorization is not perfect or always entirely clear, it serves as an attempt to distinguish between formats that are supposed to be used directly for applications, and those that are intended to be used as components or foundations to build formats with then are used for applications.
 
 
 ## Generic/Modular Formats
