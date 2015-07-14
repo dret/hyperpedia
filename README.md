@@ -9,7 +9,7 @@ The end goal is to provide a comprehensive and format-independent overview of We
 
 As a starting point, the intention is to describe concepts, and formats. To keep things simple, this is organized as follows:
 
-* [A list of hypermedia concepts](concepts.md) is managed in a single file unless it gets too big to make that look like a reasonable option.
+* [A list of hypermedia concepts](concepts.md) is managed in a single file (until it gets too big to make that look like a reasonable option).
 
 * [A list of hypermedia formats](formats.md) is managed in a directory and should contain individual files for each hypermedia format, relating the hypermedia features of the format to the concepts.
 
@@ -17,3 +17,4 @@ As a starting point, the intention is to describe concepts, and formats. To keep
 ## Contributing
 
 This is intended as a collaborative effort of the hypermedia and REST community, so please feel free to comment, contribute, and fork as you please.
+
