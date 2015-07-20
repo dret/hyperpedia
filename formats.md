@@ -14,6 +14,7 @@ While the following categorization is not perfect or always entirely clear, it s
 * [Hydra](formats/Hydra.md)
 * [Hypertext Application Language (HAL)](formats/HAL.md)
 * [Mason](formats/Mason.md)
+* [Noun As Resource With HyperLinks (NARWHL)](formats/NARWHL.md)
 * [Uniform Basis for Exchanging Representations (UBER)](formats/UBER.md)
 * [XML Inclusions (XInclude)](formats/XInclude.md)
 * [XML Linking Language (XLink)](formats/XLink.md)
