@@ -13,6 +13,7 @@ While the following categorization is not perfect or always entirely clear, it s
 * [Extensible Markup Language (XML)](formats/XML.md)
 * [Hydra](formats/Hydra.md)
 * [Hypertext Application Language (HAL)](formats/HAL.md)
+* [JSON API](formats/JSONAPI.md)
 * [Mason](formats/Mason.md)
 * [Noun As Resource With HyperLinks (NARWHL)](formats/NARWHL.md)
 * [Siren](formats/Siren.md)
