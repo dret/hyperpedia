@@ -26,7 +26,7 @@ _Incoming links_ generally follow two analogous patterns:
 
 ## Link Relation Type
 
-Hypermedia links serve a certain purpose, i.e. a client choose to follow links based on client goals, and whether following certain links is necessary to achieve those goals. The goal is something that is based on the context of the link, and on the particular client. _Link relations_ are one way of typing links, allowing them to be annotated with information about _why_ a client might want to follow a given link. Link relations should not be used express an expectation _what_ resource to expect as the link's target, instead they should only represent information about _why_ a client might want to follow a link.
+Hypermedia links serve a certain purpose, i.e. clients choose to follow links based on their goals, and whether following certain links is necessary to achieve those goals. The goal is something that is based on the context of the link, and on the particular client. _Link relations_ are one way of typing links, allowing them to be annotated with information about _why_ a client might want to follow a given link. Link relations should not be used express an expectation _what_ resource to expect as the link's target, instead they should only represent information about _why_ a client might want to follow a link.
 
 [Web Linking (RFC 5988)](http://tools.ietf.org/html/rfc5988) is one standard on the Web that defines a simple framework for link relation identification, and also defines a way how links can be represented in an HTTP "Link" header field. Using this specification allows hypermedia links to be open and extensible in terms of which types of link relations can be represented.
 
