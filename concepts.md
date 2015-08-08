@@ -19,9 +19,9 @@ _Outgoing links_ generally follow two patterns:
 
 _Incoming links_ generally follow two analogous patterns:
 
-* If the link target the complete resource, no specific additional information is required, and just identifying the resource by URI is enough.
+* If the link targets the complete resource, no specific additional information is required, and just identifying the end resource by URI is sufficient.
 
-* If the link target is a subresource, then the URI will have a fragment identifier. Depending on the resource representation, this may or may not require the resource to provide a specific anchoring mechanism. In [HTML](formats/HTML.md), for example, fragments refer to names and thus these names must be specified in the target resource in order for the subresource to be name-addressable. In [plain text](https://tools.ietf.org/html/rfc2046#section-4.1), on the other hand, [fragment identifiers](https://tools.ietf.org/html/rfc5147) use line and character addressing, and thus subresources can be identified without the need for explicit anchors in the target resource.
+* If the link target is a subresource, then the URI will have a fragment identifier. Depending on the resource media type, this may or may not require the resource to provide a specific anchoring mechanism. In [HTML](formats/HTML.md), for example, fragments refer to names and thus these names must be specified in the target resource in order for the subresource to be name-addressable. In [plain text](https://tools.ietf.org/html/rfc2046#section-4.1), on the other hand, [fragment identifiers](https://tools.ietf.org/html/rfc5147) use line and character addressing, and thus subresources can be identified without the need for explicit anchors in the target resource.
 
 
 ## Link Relation Type
