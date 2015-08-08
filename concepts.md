@@ -9,7 +9,7 @@ This is _not_ an attempt to define the complete and strictly typed &uuml;bermode
 
 Links establish connections across resources, and thus need ways to identify the linked resources. On the Web, the identification mechanism is the [Uniform Resource Identifier (URI)](http://tools.ietf.org/html/rfc3986), or its internationalized variant, the [Internationalized Resource Identifier (IRI)](http://tools.ietf.org/html/rfc3986).
 
-In both cases, identification is about a _resource_, and optionally about a [_resource fragment_](https://tools.ietf.org/html/rfc3986#section-3.5). If a resource fragment is specified, then the interpretation of the fragment identifier depends on the media type of the representation. This aspect gets a bit tricky if a resource is available in various representations, because the fragment identifier then should always identify the same logical fragment, but making sure that this is the case can be tricky, in particular if links are created by parties other than the resource provider.
+In both cases, identification is about a _resource_, and optionally about a [_resource fragment_](https://tools.ietf.org/html/rfc3986#section-3.5). If a resource fragment is specified, then the interpretation of the fragment identifier depends on the media type of the representation. This aspect requires some care if a resource is available in various representations, because the fragment identifier then should always identify the same logical fragment, but making sure that this is the case can be tricky and requires resource owners to make sure that this uniformity is provided.
 
 _Outgoing links_ generally follow two patterns:
 
