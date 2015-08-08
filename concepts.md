@@ -13,9 +13,9 @@ In both cases, identification is about a _resource_, and optionally about a [_re
 
 _Outgoing links_ generally follow two patterns:
 
-* If they are linking the host resource as a whole, they are at the highest logical level of that resource, in some special section for establishing these kinds of resource-level links, or may even be completely out-of-line and transported in external channels such as an HTTP "Link" header field.
+* If they are linking the start resource as a whole, they are at the highest logical level of that resource, in some special section for establishing these kinds of resource-level links, or may even be completely out-of-line and transported in external channels such as an HTTP "Link" header field.
 
-* If they are linking a fragment of the host resource, they often are embedded into the host resource in a way that encompasses the fragment of the host resource that is the subresource for the outgoing link.
+* If they are linking a fragment of the start resource, they often are embedded into the start resource in a way that implicitly identifies the fragment of the start resource that is the subresource for the outgoing link. (But this is not required; it also is possible for those links to use fragment identifiers _in the start resource_ for identifying the linked subresource.)
 
 _Incoming links_ generally follow two analogous patterns:
 
