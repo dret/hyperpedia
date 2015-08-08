@@ -13,7 +13,7 @@ In both cases, identification is about a _resource_, and optionally about a [_re
 
 _Outgoing links_ generally follow two patterns:
 
-* If they are linking the start resource as a whole, they are at the highest logical level of that resource, in some special section for establishing these kinds of resource-level links, or may even be completely out-of-line and transported in external channels such as an HTTP "Link" header field.
+* If they are linking the start resource as a whole, they are at the highest logical level of that resource, in some special section for establishing these kinds of resource-level links, or may even be completely out-of-line and transported in external channels such as an HTTP `Link` header field.
 
 * If they are linking a fragment of the start resource, they often are embedded into the start resource in a way that implicitly identifies the fragment of the start resource that is the subresource for the outgoing link. (But this is not required; it also is possible for those links to use fragment identifiers _in the start resource_ for identifying the linked subresource.)
 
@@ -28,11 +28,11 @@ _Incoming links_ generally follow two analogous patterns:
 
 Hypermedia links serve a certain purpose, i.e. clients choose to follow links based on their goals, and whether following certain links is necessary to achieve those goals. The goal is something that is based on the context of the link, and on the particular client. _Link relations_ are one way of typing links, allowing them to be annotated with information about _why_ a client might want to follow a given link. Link relations should not be used express an expectation _what_ resource to expect as the link's target, instead they should only represent information about _why_ a client might want to follow a link.
 
-[Web Linking (RFC 5988)](http://tools.ietf.org/html/rfc5988) is one standard on the Web that defines a simple framework for link relation identification, and also defines a way how links can be represented in an HTTP "Link" header field. Using this specification allows hypermedia links to be open and extensible in terms of which types of link relations can be represented.
+[Web Linking (RFC 5988)](http://tools.ietf.org/html/rfc5988) is one standard on the Web that defines a simple framework for link relation identification, and also defines a way how links can be represented in an HTTP `Link` header field. Using this specification allows hypermedia links to be open and extensible in terms of which types of link relations can be represented.
 
-[HTML](formats/HTML.md) and similar markup-based languages sometimes use element or attribute names to represent link relation types. While this has the advantage of being easily readable markup, the disadvantage is that the link relation types become hardcoded into the language's schema, which means that the set of supported link relation types is predefined and not extensible without changing the language itself.
+[HTML](formats/HTML.md) and similar markup-based languages sometimes use element or attribute names (as opposed to values) to represent link relation types. While this has the advantage of being easily readable markup, one side-effect is that the link relation types become hardcoded into the language's schema, which means that the set of supported link relation types is predefined and not extensible without changing the language itself.
 
-Link relation information is affected by _directionality_. If a link format has notions of representing "forward" and "backward" links, then the link relation type much be annotated in a way that identifies the direction it applies to, because most link relation types do not represent symmetric relationships between resources.
+Link relation information is affected by _directionality_. If a link format has notions of representing "forward" and "backward" links, then the link relation type must be annotated in a way that identifies the direction it applies to, because most link relation types do not represent symmetric relationships between linked resources.
 
 
 ## Human-Readable Label(s)
