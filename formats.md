@@ -18,6 +18,7 @@ While the following categorization is not perfect or always entirely clear, it s
 * [Noun As Resource With HyperLinks (NARWHL)](formats/NARWHL.md)
 * [Siren](formats/Siren.md)
 * [Uniform Basis for Exchanging Representations (UBER)](formats/UBER.md)
+* [XForms](formats/XForms.md)
 * [XML Inclusions (XInclude)](formats/XInclude.md)
 * [XML Linking Language (XLink)](formats/XLink.md)
 * [xml:id](formats/xmlid.md)
