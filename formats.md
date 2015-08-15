@@ -11,6 +11,7 @@ While the following categorization is not perfect or always entirely clear, it s
 
 * [Collection+JSON](formats/Collection+JSON.md)
 * [Extensible Markup Language (XML)](formats/XML.md)
+* [Home Documents](formats/home.md)
 * [Hydra](formats/Hydra.md)
 * [Hypertext Application Language (HAL)](formats/HAL.md)
 * [JSON API](formats/JSONAPI.md)
