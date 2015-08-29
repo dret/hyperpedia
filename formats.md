@@ -14,7 +14,7 @@ While the following categorization is not perfect or always entirely clear, it s
 * [Home Documents](formats/home.md)
 * [Hydra](formats/Hydra.md)
 * [Hypertext Application Language (HAL)](formats/HAL.md)
-* [JSON API](formats/JSONAPI.md)
+* [JSON API](formats/JSON-API.md)
 * [Mason](formats/Mason.md)
 * [Noun As Resource With HyperLinks (NARWHL)](formats/NARWHL.md)
 * [Siren](formats/Siren.md)
