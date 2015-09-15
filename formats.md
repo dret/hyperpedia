@@ -29,3 +29,5 @@ While the following categorization is not perfect or always entirely clear, it s
 
 * [Atom](formats/Atom.md)
 * [Hypertext Markup Language (HTML)](formats/HTML.md)
+* [Scalable Vector Graphics (SVG)](formats/SVG.md)
+	
