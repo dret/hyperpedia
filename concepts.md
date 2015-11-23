@@ -11,7 +11,7 @@ Links establish connections across resources, and thus need ways to identify the
 
 In both cases, identification is about a _resource_, and optionally about a [_resource fragment_](https://tools.ietf.org/html/rfc3986#section-3.5). If a resource fragment is specified, then the interpretation of the fragment identifier depends on the media type of the representation. This aspect requires some care if a resource is available in various representations, because the fragment identifier then should always identify the same logical fragment, but making sure that this is the case can be tricky and requires resource owners to make sure that this uniformity is maintained.
 
-_Outgoing links_ generally follow two patterns:
+_Outgoing links_ generally follow one of two patterns:
 
 * If they are linking the start resource as a whole, they are at the highest logical level of that resource, in some special section for establishing these kinds of resource-level links, or may even be completely out-of-line and transported in external channels such as an HTTP `Link` header field.
 
