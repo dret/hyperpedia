@@ -17,7 +17,7 @@ _Outgoing links_ generally follow one of two patterns:
 
 * If they are linking a fragment of the start resource, they often are embedded into the start resource in a way that implicitly identifies the fragment of the start resource that is the subresource for the outgoing link. (But this is not required; it also is possible for those links to use fragment identifiers _in the start resource_ for identifying the linked subresource.)
 
-_Incoming links_ generally follow two analogous patterns:
+_Incoming links_ generally follow one of two analogous patterns:
 
 * If the link targets the complete resource, no specific additional information is required, and just identifying the end resource by URI is sufficient.
 
