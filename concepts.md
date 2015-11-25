@@ -1,8 +1,8 @@
 # Hyperpedia Concepts
 
-This is a necessarily fuzzy and incomplete collection of information that can be associated with link in hypermedia scenarios.
+This is a necessarily fuzzy and incomplete collection of information that can be associated with links in hypermedia scenarios. 
 
-This is _not_ an attempt to define the complete and strictly typed &uuml;bermodel for hypermedia.
+This is _not_ an attempt to define the complete and strictly typed &uuml;bermodel for hypermedia. There also are some assumptions about the environment, most importantly a _decentralized_ scenario, meaning that resources are not centrally controlled. This puts a specific focus on [loose coupling](http://www2009.eprints.org/92/1/p911.pdf), so that changes in the decentralized landscape do not (always) break applications. Another assumption is that the hypermedia scenario is (partly) based on [Web Architecture](http://www.w3.org/standards/webarch/), meaning that it's better to reuse existing Web technologies than to invent new ones.
 
 
 ## Target Identification
@@ -44,7 +44,7 @@ Labels may be used for various aspects of a link, depending on the complexity of
 
 ## Target Resource Hints
 
-A link itself should represent all the information that a client needs to decide whether it should or should not traverse the link, based on client goals. But that does not imply _what_ to expect as the target resource, it _only_ implies _why_ a client might decide to engage in a resource interaction. This is important because a link should not hardcode assumptions about what to expect when traversing the link, because this may change over time.
+A link itself should represent all the information that a client needs to decide whether it should or should not traverse the link, based on client goals. But that does not imply _what_ to expect as the target resource, it _only_ implies _why_ a client might decide to engage in a resource interaction. This is important because a link should not hardcode assumptions about what to expect when traversing the link, because this may change over time (keep in mind that the start and end resource are not necessarily controlled by the same entity, so any assumptions about the target resource introduce tight coupling and brittleness).
 
 However, in some scenarios link authors may choose to represent information about the target resource. However, since these are mere assumptions made at _link authoring time_ (which can be very different from _link traversal time_), this information can merely serve as a _hint_ and may or may not turn out to be correct at link traversal time. Therefore, hints always should be optional and should be treated as information that may or may not be true when the link is traversed. Clients should always give preference to any resource information that results from link traversal, rather than assuming that the resource hint was correct.
 
