@@ -13,6 +13,8 @@ As a starting point, the intention is to describe concepts, and formats. To keep
 
 * [A list of hypermedia formats](formats.md) is managed in a directory and should contain individual files for each hypermedia format, relating the hypermedia features of the format to the concepts.
 
+* Preliminary lists of concepts for [hypermedia](concept-template.md) and [formats](format-template.md) that later on should be used to create a more structured version of hyperpedia.
+
 
 ## Contributing
 
