@@ -32,7 +32,7 @@ Hypermedia links serve a certain purpose, i.e. clients choose to follow links ba
 
 [HTML](formats/HTML.md) and similar markup-based languages sometimes use element or attribute names (as opposed to values) to represent link relation types. While this has the advantage of creating easily readable markup, one side-effect is that the link relation types become hardcoded into the language's schema (one example is HTML's `img` element, which hardcodes the fact that a linked resource is an image that should be transcluded). This means that the set of supported link relation types is predefined and not extensible without changing the language itself.
 
-Link relation information is affected by _directionality_. If a link format has notions of representing "forward" and "backward" links, then the link relation type must be annotated in a way that identifies the direction it applies to, because most link relation types do not represent symmetric relationships between linked resources.
+Link relation information is affected by _directionality_. If a link format has the notion of representing "forward" and "backward" links, then the link relation type must be annotated in a way that identifies the direction it applies to, because most link relation types do not represent symmetric relationships between linked resources.
 
 
 ## Human-Readable Label(s)
