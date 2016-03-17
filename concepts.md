@@ -59,7 +59,7 @@ The goal of _traversal hints_ is to give clients hints about _how_ to traverse a
 
 Generally speaking, there are two major approaches to how traversal hints can be represented:
 
-* Traversal hints can be _implicit_ in a link's type, so that the link itself already represents a hint as to how to traverse it. For example, [HTML forms](http://www.w3.org/TR/html401/interact/forms.html#submit-format) define two possible ways how to communicate the contents of a form. While the choice between those two is made explicit (using the [_method_](http://www.w3.org/TR/html401/interact/forms.html#adef-method) attribute), the rules themselves are hardcoded in the HTML specification.
+* Traversal hints can be _implicit_ in a link's type, so that the link itself already represents a hint as to how to traverse it. For example, [HTML forms](http://www.w3.org/TR/html401/interact/forms.html#submit-format) define two possible ways how to communicate the contents of a form. While the choice between those two is made explicit (using the [`method`](http://www.w3.org/TR/html401/interact/forms.html#adef-method) attribute), the rules themselves are hardcoded in the HTML specification.
 
 * Traversal hints can be _explicit_ in the link's representation, so that clients have to interpret and use them at runtime. For example, a [URI Template](http://tools.ietf.org/html/rfc6570) is one way how a link can specify how to compose the [query component](https://tools.ietf.org/html/rfc3986#section-3.4) of a URI when traversing a link.
 
