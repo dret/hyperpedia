@@ -53,7 +53,7 @@ Typical target resource hints include a resource's [Internet Media Type](https:/
 
 ## Traversal Hints
 
-A link communicates to a client one possible hypermedia navigation, and the client might choose to follow a link based on client goals. However, depending on the type of navigation, it may be necessary to know additional rules that need to be followed when traversing the link. However, these rules will be specific to specific interaction with the target resource, which is not determined by the link itself, but instead by the [URI scheme](https://tools.ietf.org/html/rfc3986#section-3.1) of the target resource identifier, and possibly by the target resource itself.
+A link communicates to a client one possible hypermedia navigation, and the client might choose to follow a link based on client goals. However, depending on the type of navigation, it may be necessary to know additional rules that need to be followed when traversing the link. However, these rules will be specific to the interaction with the target resource, which is not determined by the link itself, but instead by the [URI scheme](https://tools.ietf.org/html/rfc3986#section-3.1) of the target resource identifier, and possibly by the target resource itself.
 
 The idea of _traversal hints_ is to give clients hints about _how_ to traverse a link. This may include information such as which [HTTP method](https://tools.ietf.org/html/rfc7231#section-4) to use, but may also include more specific information about how to interact with the target resource, such as a [URI Template](http://tools.ietf.org/html/rfc6570), possibly with a description of the variables.
 
