@@ -21,7 +21,7 @@ _Incoming links_ generally follow one of two analogous patterns:
 
 * If the link targets the complete resource, no specific additional information is required, and just identifying the end resource by URI is sufficient.
 
-* If the link target is a subresource, then the URI will have a fragment identifier. Depending on the resource media type, this may or may not require the resource to provide a specific anchoring mechanism. In [HTML](formats/HTML.md), for example, fragments refer to names and thus these names must be specified in the target resource in order for the subresource to be name-addressable. In [plain text](https://tools.ietf.org/html/rfc2046#section-4.1), on the other hand, [fragment identifiers](https://tools.ietf.org/html/rfc5147) use line and character addressing, and thus subresources can be identified without the need for explicit anchors in the target resource.
+* If the link target is a subresource, then the URI will have a fragment identifier. Depending on the resource media type, this may or may not require the resource to provide a specific anchoring mechanism. In [HTML](models/HTML.md), for example, fragments refer to names and thus these names must be specified in the target resource in order for the subresource to be name-addressable. In [plain text](https://tools.ietf.org/html/rfc2046#section-4.1), on the other hand, [fragment identifiers](https://tools.ietf.org/html/rfc5147) use line and character addressing, and thus subresources can be identified without the need for explicit anchors in the target resource.
 
 
 ## Link Relation Type
@@ -30,9 +30,9 @@ Hypermedia links serve a certain purpose, i.e. clients choose to follow links ba
 
 [Web Linking (RFC 5988)](http://tools.ietf.org/html/rfc5988) is one standard on the Web that defines a simple framework for link relation identification, and also defines a way how links can be represented in an HTTP `Link` header field. Using this specification allows hypermedia links to be open and extensible in terms of which types of link relations can be represented.
 
-[HTML](formats/HTML.md) and similar markup-based languages sometimes use element or attribute names (as opposed to values) to represent link relation types. While this has the advantage of creating easily readable markup, one side-effect is that the link relation types become hardcoded into the language's schema (one example is HTML's `img` element, which hardcodes the fact that a linked resource is an image that should be transcluded). This means that the set of supported link relation types is predefined and not extensible without changing the language itself.
+[HTML](models/HTML.md) and similar markup-based languages sometimes use element or attribute names (as opposed to values) to represent link relation types. While this has the advantage of creating easily readable markup, one side-effect is that the link relation types become hardcoded into the language's schema (one example is HTML's `img` element, which hardcodes the fact that a linked resource is an image that should be transcluded). This means that the set of supported link relation types is predefined and not extensible without changing the language itself.
 
-Link relation information is affected by _directionality_. If a link format has the notion of representing "forward" and "backward" links, then the link relation type must be annotated in a way that identifies the direction it applies to, because most link relation types do not represent symmetric relationships between linked resources.
+Link relation information is affected by _directionality_. If a link model has the notion of representing "forward" and "backward" links, then the link relation type must be annotated in a way that identifies the direction it applies to, because most link relation types do not represent symmetric relationships between linked resources.
 
 
 ## Human-Readable Label(s)
@@ -70,7 +70,7 @@ Since traversal hints tell a client how to behave when following a link, they ar
 
 While links usually are thought of to have two participating resources or subresources (the _source_ and the _target_), link models can also support other topologies. It is both possible to have _unary_ "links" (which also can be thought of as annotations, since "traversing" them is not a meaningful concept), or _n-ary_ links, where the link model supports more than two participating resources.
 
-Some generalized link models such as [W3C's XML Linking Language (XLink)](formats/XLink.md) support n-ary links. While the exact design of those links depends on the language, it is important to note that for these kinds of links, typically more link metadata is required to make the link actionable. In typical n-ary link models, both the set of participating resources as well as the connecting _arcs_ (to choose the XLink term for this concept) between them need to be made explicit, so that clients know how to navigate such a structurally complex link.
+Some generalized link models such as [W3C's XML Linking Language (XLink)](models/XLink.md) support n-ary links. While the exact design of those links depends on the language, it is important to note that for these kinds of links, typically more link metadata is required to make the link actionable. In typical n-ary link models, both the set of participating resources as well as the connecting _arcs_ (to choose the XLink term for this concept) between them need to be made explicit, so that clients know how to navigate such a structurally complex link.
 
 
 ## Directionality
@@ -84,7 +84,7 @@ The difference between directionality and resource roles is that directionality 
 
 In simple link structures, the roles of resources are implicit in the definition and the direction of the link. Thus, as long as the topology is limited to binary links, resource roles do not need to be specified explicitly, and can be inferred from the link relation type and the participating resources.
 
-However, in more general topologies (specifically, n-ary models beyond the binary one), resources can participate in a link in a variety of roles, and simply listing them as participating resources is not sufficient anymore. One example is the [XML Linking Language (XLink)](formats/XLink.md), which allows any number or participating resources in links, and thus has an explicit mechanism to indicate the role that a participating resource is playing in a link.
+However, in more general topologies (specifically, n-ary models beyond the binary one), resources can participate in a link in a variety of roles, and simply listing them as participating resources is not sufficient anymore. One example is the [XML Linking Language (XLink)](models/XLink.md), which allows any number or participating resources in links, and thus has an explicit mechanism to indicate the role that a participating resource is playing in a link.
 
 As a special case, the _to_ and _from_ indicators of directed binary links can be regarded as indicators of resource roles. Even though they do not explicitly represent a participating resource's role, the combination of the directed binary link relation type and the participating resource's role as source or target resource are sufficient to understand the resource's role.
 
