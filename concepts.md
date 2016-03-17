@@ -70,7 +70,7 @@ Since traversal hints tell a client how to behave when following a link, they ar
 
 While links usually are thought of as having two participating resources or subresources (the _source_ and the _target_), link models can also support other topologies. It is both possible to have _unary_ "links" (which also can be thought of as annotations, since "traversing" them is not a meaningful concept), or _n-ary_ links, where the link model supports more than two participating resources.
 
-Some generalized link models such as [W3C's XML Linking Language (XLink)](models/XLink.md) support n-ary links. While the exact design of those links depends on the language, it is important to note that for these kinds of links, typically more link metadata is required to make the link actionable. In typical n-ary link models, both the set of participating resources as well as the connecting _arcs_ (to choose the XLink term for this concept) between them need to be made explicit, so that clients know how to navigate such a structurally complex link.
+Some generalized link models such as [W3C's XML Linking Language (XLink)](models/XLink.md) support n-ary links. While the exact design of those links depends on the application, it is important to note that for these kinds of links, typically more link metadata is required to make the link useful and actionable. In typical n-ary link models, both the set of participating resources as well as the connecting _arcs_ (to choose the XLink term for this concept) between them need to be made explicit, so that clients know how to navigate such a structurally complex link.
 
 
 ## Directionality
