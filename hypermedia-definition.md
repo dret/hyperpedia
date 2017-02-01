@@ -12,4 +12,4 @@ Interactions along links take clients from one resource to the next. Interaction
 
 *Multimedia* refers to the fact that the resources provided in a hypermedia context can use a variety of media types. Traditionally, it meant that information representation and display goes beyond simple text. Architecturally, it means that a hypermedia architecture must be capable of representing a variety of media types, and that clients potentially must be able to navigate through these various types.
 
-This does not imply that all clients must be able to navigate all media types. It depends both on the resource providers and on application authors which media types they want to use for their needs, and which ones they just choose to create or consume.
+This does not imply that all clients must be able to navigate all media types. It depends both on the resource providers and on application authors which media types they want to use for their needs, and which ones they choose to create or consume.
