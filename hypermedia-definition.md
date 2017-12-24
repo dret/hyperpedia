@@ -20,3 +20,5 @@ This does not imply that all clients must be able to navigate all media types. I
 ## Hypermedia APIs
 
 Traditionally, hypermedia was conceived as a way for humans to interact with an information space. Consequently, many concepts in earlier hypermedia literature assume that human agents are using clients, which present rendered information to them, and allow them to navigate the information space.
+
+More recently, the concept of hypermedia has been extended to cover APIs as well, where the assumption is that clients are not (necessarily) directly controlled by humans. In this case, hypermedia approaches need slightly different designs, because they cannot rely on humans reading "link labels" and then deciding which link to follow. Instead, these hypermedia APIs must represent hypermedia in a way that allows clients to autonomously navigate the information space in an attempt to accomplish their application goals.
