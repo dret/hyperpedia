@@ -6,7 +6,7 @@
 
 *Hypertext* refers to the fact that separate information units are made available as individually navigable resources, and that these resources are interconnected by *hyperlinks*. Consumers of hypertext follow navigation paths. For this to work, *links* must be clearly identified within individual resources, and they must be meaningfully navigable so that clients can make decisions which links to follow.
 
-Interactions along links take clients from one resource to the next. Interactions can have whatever meaning the resource provider assigns to them, specifically they can be richer than just interacting with static data.
+Interactions along links take clients from one resource to the next. Interactions can have whatever meaning the resource provider assigns to them, specifically they can be richer than just retrieving static data.
 
 ## Multimedia
 
