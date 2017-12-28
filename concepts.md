@@ -1,6 +1,6 @@
 # Hyperpedia Concepts
 
-This is a necessarily fuzzy and incomplete collection of information that can be associated with links in hypermedia scenarios. 
+This is a necessarily fuzzy and incomplete collection of information that can be associated with links in hypermedia scenarios.
 
 This is _not_ an attempt to define the complete and strictly typed &uuml;bermodel for hypermedia. There also are some assumptions about the environment, most importantly a _decentralized_ scenario, meaning that resources are not centrally controlled. This puts a specific focus on [loose coupling](http://www2009.eprints.org/92/1/p911.pdf), so that changes in the decentralized landscape do not (always) break applications. Another assumption is that the hypermedia scenario is (partly) based on [Web Architecture](http://www.w3.org/standards/webarch/), meaning that it's better to reuse existing Web technologies than to invent new ones.
 
@@ -28,7 +28,7 @@ _Incoming links_ generally follow one of two analogous patterns:
 
 Hypermedia links serve a certain purpose, i.e. clients choose to follow links based on their application goals, and whether following certain links is necessary to achieve those goals. The application goal is something that is based on the context of the link, and on the particular client. _Link relations_ are one way of typing links, allowing them to be annotated with information about _why_ a client might want to follow a given link. Link relations should not be used to express an expectation of _what_ resource to expect as the link's target, instead they should only represent information about _why_ a client might want to follow a link.
 
-[Web Linking (RFC 5988)](http://tools.ietf.org/html/rfc5988) is one standard on the Web that defines a simple framework for link relation identification, and also defines a way how links can be represented in an HTTP `Link` header field. Using this specification allows hypermedia links to be open and extensible in terms of which types of link relations can be represented.
+[Web Linking (RFC 8288)](http://tools.ietf.org/html/rfc8288) is one standard on the Web that defines a simple framework for link relation identification, and also defines a way how links can be represented in an HTTP `Link` header field. Using this specification allows hypermedia links to be open and extensible in terms of which types of link relations can be represented.
 
 [HTML](models/HTML.md) and similar markup-based languages sometimes use element or attribute names (as opposed to values) to represent link relation types. While this has the advantage of creating easily readable markup, one side-effect is that the link relation types become hardcoded into the language's schema (one example is HTML's `img` element, which hardcodes the fact that a linked resource is an image that should be transcluded). This means that the set of supported link relation types is predefined and not extensible without changing the language itself.
 
@@ -87,5 +87,3 @@ In simple link structures, the roles of resources are implicit in the definition
 However, in more general topologies (specifically, n-ary models beyond the binary one), resources can participate in a link in a variety of roles, and simply listing them as participating resources is not sufficient anymore. One example is the [XML Linking Language (XLink)](models/XLink.md), which allows any number or participating resources in links, and thus has an explicit mechanism to indicate the role that a participating resource is playing in a link.
 
 As a special case, the _to_ and _from_ indicators of directed binary links can be regarded as indicators of resource roles. Even though they do not explicitly represent a participating resource's role, the combination of the directed binary link relation type and the participating resource's role as source or target resource are sufficient to understand the resource's role.
-
-
