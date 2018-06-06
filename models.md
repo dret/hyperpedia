@@ -29,4 +29,5 @@ While the following categorization is not perfect or always entirely clear, it s
 
 * [Atom](models/Atom.md)
 * [Hypertext Markup Language (HTML)](models/HTML.md)
+* [JSON Feed](models/JSON-Feed.md)
 * [Scalable Vector Graphics (SVG)](models/SVG.md)
